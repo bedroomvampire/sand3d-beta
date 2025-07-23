@@ -1494,6 +1494,8 @@ namespace ui
 			}
 		}
 
+		if constexpr (false)
+		{
 		EnableMenu(choosingElement);
 
 		// Main Menu UI Elements
@@ -1563,6 +1565,7 @@ namespace ui
 			selectionButtonWidth * 2 + innerPadding, selectionButtonHeight, NewSave));
 
 		EnableMainMenu(true);
+		}
 	}
 
 	// This is a new commit added

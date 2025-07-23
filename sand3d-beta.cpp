@@ -83,7 +83,7 @@ int main()
 	ui::solids[ui::splashScreen].visible = false;
 	//ui::solids[ui::crossHair].visible = true;
 	// game::resetMouseOffset = true;
-	changeScene(game::mainMenu);
+	// changeScene(game::mainMenu);
 
 	// Game Loop
 	while (!glfwWindowShouldClose(game::window))
@@ -165,8 +165,8 @@ void game::FramebufferSizeCallback(GLFWwindow* window, int width, int height)
 void game::KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
 	// If we are in either splash or main menu scenes, we are not alowed to used input
-	if (game::currentScene == splashScreen || 
-		game::currentScene == mainMenu) return;
+	// if (game::currentScene == splashScreen || 
+	// 	game::currentScene == mainMenu) return;
 
 
 	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
