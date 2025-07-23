@@ -104,7 +104,7 @@ void main()
 
 	// Color and shading of the voxels
 	bvec3 mask = bvec3(false);
-	vec3 color;
+	vec3 color = vec3(0.0,0.0,0.0);
 
 	if (BACKGROUND_COLOR_DISPLAY) color.rgb = BACKGROUND_COLOR;
 

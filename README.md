@@ -1,6 +1,13 @@
+# sand3d (the bvamp version)
+- so anyway i decided to fork this
+
+## changes i made
+
+- changed the background to black
+
 # ey look lbphacker made it build
 
-## changes I made
+## changes lbphacker made
 
 - add a meson config, install meson and ninja with your package manager
 	- pull glm and glfw via the package ecosystem, install them with your package manager
