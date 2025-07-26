@@ -1130,7 +1130,7 @@ namespace ui
 	int selectionButtonWidth = 175;
 	int selectionButtonHeight = 26;
 
-	bool choosingElement = false; // In Element Choosing UI or not
+	bool choosingElement = true; // In Element Choosing UI or not
 	int elementSelectionBase;
 	int elementSelectionText;
 

@@ -257,7 +257,7 @@ namespace game
 		// Setting OpenGL viewport
 		glViewport(0, 0, game::width, game::height);
 
-		// Setting callbakc for input
+		// Setting callback for input
 		glfwSetKeyCallback(window, KeyCallback);
 
 		// Setting callback for window resize

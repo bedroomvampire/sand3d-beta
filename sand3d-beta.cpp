@@ -180,7 +180,31 @@ void game::KeyCallback(GLFWwindow* window, int key, int scancode, int action, in
 		game::addTrauma(0.25);
 	}
 
-#if DEBUG_CHUNKS == true
+	if (key == GLFW_KEY_1)
+	{
+		simulation::brushSize = 1;
+	}
+
+	if (key == GLFW_KEY_2)
+	{
+		simulation::brushSize = 2;
+	}
+
+	if (key == GLFW_KEY_3)
+	{
+		simulation::brushSize = 3;
+	}
+
+	if (key == GLFW_KEY_4)
+	{
+		simulation::brushSize = 4;
+	}
+
+	if (key == GLFW_KEY_5)
+	{
+		simulation::brushSize = 5;
+	}
+
 	if (key == GLFW_KEY_EQUAL && action == GLFW_PRESS)
 	{
 		simulation::pause = !simulation::pause;
@@ -189,7 +213,6 @@ void game::KeyCallback(GLFWwindow* window, int key, int scancode, int action, in
 	{
 		simulation::increment = true;
 	}
-#endif
 }
 
 // Input for every frame

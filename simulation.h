@@ -389,6 +389,8 @@ namespace simulation
 #pragma region simulating
 
 	int brushSize = 1;
+	int brushLowerLimit = 1;
+	int brushUpperLimit = 10;
 
 	// If Change then do not draw line between current and previous
 	bool heldDown = false;
@@ -1191,24 +1193,22 @@ namespace simulation
 		GenerateWorld();
 	}
 
-#if DEBUG_CHUNKS
 	// Variables to pause and increment the frame when in debug mode
 	bool pause = false;
 	bool increment = false;
-#endif
 
 	// TODO: Fix the explosion to make it feel more natural and less fake
+	// TODO: Find a way to place elements while paused
 
 	// Update the element simulation ( + particle sim)
 	void UpdateSimulation()
 	{
-#if DEBUG_CHUNKS
 		if (increment || !pause)
 		{
 			increment = false;
 		}
 		else return;
-#endif
+
 		// Entire Simulation
 		if (game::elementUpdateTick > 1.0 / 30.0) // 30 ticks per second
 		{
