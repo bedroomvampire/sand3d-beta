@@ -13,8 +13,8 @@ executable(
 		'./FastNoiseLite/Cpp',
 	),
 	dependencies: [
-		dependency('glm'),
-		dependency('glfw3'),
+		dependency('glm', static: true),
+		dependency('glfw3', static: true),
 	],
 	override_options: [
 		'cpp_std=c++17',
