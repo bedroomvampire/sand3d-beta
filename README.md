@@ -4,6 +4,8 @@
 ## changes i made
 
 - changed the background to black
+- brush size changable (key 1-5)
+- simulation pausable (press + to pause)
 
 # ey look lbphacker made it build
 
