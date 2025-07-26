@@ -14,7 +14,7 @@ executable(
 	),
 	dependencies: [
 		dependency('glm'),
-		dependency('glfw3'),
+		subproject('glfw').get_variable('glfw_dep'),
 	],
 	override_options: [
 		'cpp_std=c++17',
